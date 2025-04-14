@@ -1,6 +1,9 @@
 # sc-ts-forecasting-arima-vs-lstm
 Supply Chain Forecasting in a fast-moving globaleconomy: Review, Limits and Future Directions
 
+![Experimental Setup](figures/experimental protocol.jpg)
+
+
 # Time Series Forecasting: LSTM vs ARIMA on Diverse Demand Patterns
 
 This repository contains code to compare **LSTM** and **ARIMA** models across four types of time series demand patterns:

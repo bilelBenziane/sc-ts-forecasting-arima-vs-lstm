@@ -1,7 +1,7 @@
 # sc-ts-forecasting-arima-vs-lstm
 Supply Chain Forecasting in a fast-moving globaleconomy: Review, Limits and Future Directions
 
-![Experimental Setup](figures/experimental_protocol.jpg)
+<img src="figures/experimental_protocol.jpg" alt="Experimental Setup" width="50%" />
 
 
 # Time Series Forecasting: LSTM vs ARIMA on Diverse Demand Patterns

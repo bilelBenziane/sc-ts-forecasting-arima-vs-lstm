@@ -12,6 +12,21 @@ This repository contains code to compare **LSTM** and **ARIMA** models across fo
 
 The analysis is based on the [Favorita Grocery Sales Forecasting dataset](https://www.kaggle.com/competitions/favorita-grocery-sales-forecasting).
 
+> ⚠️ **Note**: All notebooks are intended to be run in **Jupyter Notebook**.
+
+---
+
+## 🧪 Experimental Protocol
+
+The experimental flow includes:
+- Dataset preparation and classification into demand types
+- Training and evaluation of LSTM vs ARIMA on each group
+- Comparative analysis of model performance
+
+📌 Below is the experimental protocol figure:
+
+![Experimental Protocol](figures/experiment_protocol.jpeg)
+
 ---
 
 ## 📂 Overview
@@ -21,15 +36,15 @@ The analysis is based on the [Favorita Grocery Sales Forecasting dataset](https:
 This notebook:
 - Loads the Favorita dataset
 - Preprocesses and categorizes time series into four groups
-- Outputs cleaned datasets into four folders:
+- Outputs cleaned datasets into:
   - `data/smooth/`
   - `data/intermittent/`
   - `data/erratic/`
   - `data/lumpy/`
 
-### 📁 Group Training and Testing
+### 📁 Model Training and Evaluation
 
-Each of the following notebooks trains and compares **ARIMA** and **LSTM** models on a different demand type:
+Each notebook trains and compares **ARIMA** and **LSTM** on one group:
 
 - `Smooth TS Group Training Test.ipynb`
 - `Intermittent TS Group Training Test.ipynb`
@@ -39,8 +54,6 @@ Each of the following notebooks trains and compares **ARIMA** and **LSTM** model
 ---
 
 ## ⚙️ Environment Setup (via Conda)
-
-Use the following commands to set up the environment:
 
 ```bash
 # Create environment
@@ -58,8 +71,20 @@ conda install -c anaconda scipy
 conda install -c conda-forge pmdarima
 conda install ipykernel
 
-# Register environment as Jupyter kernel
+# Register Jupyter kernel
 python -m ipykernel install --user --name ts-forecast-env --display-name "Python (ts-forecast-env)"
 
-# Install deep learning frameworks
+# Install deep learning libs
 pip install tensorflow keras
+
+# If you use this code, please cite the following paper:
+
+@INPROCEEDINGS{10275183,
+  author={Benziane, Bilel Abderrahmane and Lardeux, Benoit and Jridi, Maher and Mcharek, Ayoub},
+  booktitle={2023 28th International Conference on Automation and Computing (ICAC)}, 
+  title={Supply Chain Forecasting in a Fast-Moving Global Economy: Review, Limits and Future Directions}, 
+  year={2023},
+  pages={1-6},
+  keywords={COVID-19;Recurrent neural networks;Pandemics;Biological system modeling;Data integrity;Supply chains;Time series analysis;Demand forecasting;Demand prediction;Supply chain;Artificial intelligence;Machine learning},
+  doi={10.1109/ICAC57885.2023.10275183}
+}

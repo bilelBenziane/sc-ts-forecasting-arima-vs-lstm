@@ -77,7 +77,7 @@ python -m ipykernel install --user --name ts-forecast-env --display-name "Python
 # Install deep learning libs
 pip install tensorflow keras
 
-# If you use this code, please cite the following paper:
+## If you use this code, please cite the following paper:
 
 @INPROCEEDINGS{10275183,
   author={Benziane, Bilel Abderrahmane and Lardeux, Benoit and Jridi, Maher and Mcharek, Ayoub},

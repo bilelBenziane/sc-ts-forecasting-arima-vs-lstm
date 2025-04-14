@@ -77,8 +77,11 @@ python -m ipykernel install --user --name ts-forecast-env --display-name "Python
 # Install deep learning libs
 pip install tensorflow keras
 
-## If you use this code, please cite the following paper:
+## 📚 Citation
 
+If you use this code, please cite the following paper:
+
+```bibtex
 @INPROCEEDINGS{10275183,
   author={Benziane, Bilel Abderrahmane and Lardeux, Benoit and Jridi, Maher and Mcharek, Ayoub},
   booktitle={2023 28th International Conference on Automation and Computing (ICAC)}, 
@@ -88,3 +91,4 @@ pip install tensorflow keras
   keywords={COVID-19;Recurrent neural networks;Pandemics;Biological system modeling;Data integrity;Supply chains;Time series analysis;Demand forecasting;Demand prediction;Supply chain;Artificial intelligence;Machine learning},
   doi={10.1109/ICAC57885.2023.10275183}
 }
+
